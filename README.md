@@ -28,7 +28,7 @@
 
 
 ## 评价体系Cases
-靶场用例，详见文档[《引擎能力评价体系》]()，目前仍在持续更新中，您也可以评论留下您的宝贵意见或建议
+靶场用例，详见文档[《评价项对应表》](https://github.com/alipay/ant-application-security-testing-benchmark-nodejs/wiki/case%E5%AF%B9%E5%BA%94%E8%A1%A8)，目前仍在持续更新中，您也可以评论留下您的宝贵意见或建议
 
 ## QuickStart
 
