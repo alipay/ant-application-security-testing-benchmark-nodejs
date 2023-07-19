@@ -1,0 +1,5 @@
+.idea/
+run/
+logs/
+*.log
+*.log.*
