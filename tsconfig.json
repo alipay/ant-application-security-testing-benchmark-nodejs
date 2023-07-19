@@ -1,0 +1,17 @@
+{
+  "extends": "@eggjs/tsconfig",
+  "exclude": ["app/public", "app/web", "app/views"],
+  "compilerOptions": {
+    "declaration": false,
+    "paths": {
+      "@/module/*": ["app/module/*"],
+    },
+    "module": "commonjs",
+    "target": "es6",
+    "lib": ["es6"],
+    "sourceMap": true,
+    "outDir": "./dist",
+    "moduleResolution": "node",
+    "baseUrl": "."
+  }
+}
