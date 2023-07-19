@@ -30,7 +30,7 @@
 ## 评价体系Cases
 靶场用例，详见文档[《评价项对应表》](https://github.com/alipay/ant-application-security-testing-benchmark-nodejs/wiki/case%E5%AF%B9%E5%BA%94%E8%A1%A8)，目前仍在持续更新中，您也可以评论留下您的宝贵意见或建议
 
-配合靶场使用的source、sink点清单见文档[《source、sink清单》](),各个产品使用时可以以自己的配置方式进行导入配置。
+配合靶场使用的source、sink点清单见文档[《source、sink清单》](https://github.com/alipay/ant-application-security-testing-benchmark-nodejs/wiki/%E9%9D%B6%E5%9C%BAsource%E3%80%81sink%E7%82%B9%E6%B8%85%E5%8D%95),各个产品使用时可以以自己的配置方式进行导入配置。
 
 
 ## 推荐使用的评价指标
