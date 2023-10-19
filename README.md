@@ -78,6 +78,6 @@ Don't tsc compile at development mode, if you had run `tsc` then you need to `np
 
 
 ## 联系我们
-钉钉
+#### 微信
+![Image text](https://github.com/alipay/ant-application-security-testing-benchmark/blob/main/floder-img/Iwechat.png)
 
-![扫码加入钉钉群](./floder-img/a.png)
