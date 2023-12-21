@@ -1,3 +1,16 @@
+## 联系我们
+#### 微信
+<div align="center">
+  <table>
+    <tr>
+      <td style="text-align: center;">
+        <img src="https://github.com/alipay/ant-application-security-testing-benchmark/raw/main/floder-img/xzs.png" alt="微信小助手" width="200"/><br>
+        <em>微信小助手</em>
+      </td>
+    </tr>
+  </table>
+</div>
+
 ## 背景
 本项目属于蚂蚁安全团队应用安全评价体系项目。本评价体系为Nodejs污点追踪引擎评价体系，用于评价对服务端的Node环境中运行的Javascript代码以及当前开发中常用的Typescript代码进行污点追踪的安全扫描引擎的能力。评价体系靶场选择了蚂蚁开源的Nodejs框架EggJS。
 
@@ -82,10 +95,6 @@ Don't tsc compile at development mode, if you had run `tsc` then you need to `np
 <div align="center">
   <table>
     <tr>
-      <td style="text-align: center;">
-        <img src="https://github.com/alipay/ant-application-security-testing-benchmark/raw/main/floder-img/Iwechat.png" alt="微信交流群" width="200"/><br>
-        <em>微信交流群</em>
-      </td>
       <td style="text-align: center;">
         <img src="https://github.com/alipay/ant-application-security-testing-benchmark/raw/main/floder-img/xzs.png" alt="微信小助手" width="200"/><br>
         <em>微信小助手</em>
