@@ -1,0 +1,44 @@
+// Tabs.less
+@active-tab-color: blue;
+@active-tab-text-color: white;
+
+.tabs-container {
+    font-family: Arial, sans-serif;
+
+    .tabs-header {
+        line-height: 36px;
+        margin: auto;
+        font-size: 18px;
+        width: 895px;
+        height: 36px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .tab {
+            cursor: pointer;
+            height: 36px;
+            padding: 0 16px;
+            border-radius: 900px;
+            transition: background-color 0.3s, color 0.3s;
+
+            &:hover {
+                color: #006BFF;
+                background-color: rgba(0, 107, 255, 0.06);
+            }
+        }
+
+        .active {
+            background-color: rgba(0, 107, 255, 0.06);
+            color: #006BFF;
+        }
+    }
+
+    .tab-content {
+        width: 1200px;
+        margin: auto;
+        padding: 20px;
+        border: 1px solid #dedede;
+        border-radius: 5px;
+    }
+}

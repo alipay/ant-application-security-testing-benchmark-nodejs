@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center; // 将导航内容居中
+    width: 100%;
+    background-color: #1e2639; // 示例背景颜色
+    height: 60px;
+    line-height: 60px;
+
+    .content {
+        width: 1920px;
+
+        ul {
+            margin: 0;
+        }
+
+        display: flex;
+        align-items: center;
+        // width: 100%;
+        box-shadow: 0px 1px 1px 0px rgba(255, 255, 255, 0.06);
+
+        .logo {
+            margin-left: 32px;
+            // 指定logo的大小和背景
+            width: 182px; // 假设logo宽度为150px
+            height: 31px;
+            background-image: url('/images/01头部/logo.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin-right: 32px; // logo到导航链接的间隔
+            max-height: 100%;
+        }
+
+        .nav-links {
+            flex-grow: 1; // 导航链接部分占据多余空间
+            display: flex;
+            list-style: none;
+
+            >:first-child a {
+                padding: 0;
+                margin: 0 12px;
+                border-bottom: 2px #006BFF solid;
+                // background-color: #fff;
+            }
+
+            li {
+                a {
+                    display: block; // 让连接占据整个li空间
+                    padding: 0 24px; // 添加一些padding使得链接易于点击
+                    text-decoration: none;
+                    color: rgba(255, 255, 255, 0.6);
+
+                    &:hover {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+
+        .git-icon {
+            margin-right: 12px;
+            margin-bottom: 1px;
+        }
+
+        .language-icon {
+            margin-right: 5px;
+            margin-bottom: 3px;
+            /* 可以调整图标的大小 */
+            line-height: 60px;
+        }
+
+        .language-selector {
+            // 在这里可以不设置宽度，它会自动根据内容调整
+            margin-right: 66px; // 导航链接到语言选择器的间隔
+            width: 105px;
+            height: fit-content;
+
+            select {
+                color: #fff;
+                padding: 0px 5px;
+                border-radius: 5px;
+                background-color: #1e2639;
+            }
+        }
+    }
+}

@@ -1,0 +1,451 @@
+.bannerContainer {
+    position: relative;
+    display: flex;
+    width: 1523px;
+    height: 488px;
+    margin-left: 360px;
+}
+
+.blueCap {
+    color: #559CFF;
+}
+
+
+.bannerTextSection {
+    width: 650px;
+    /* 文字部分固定宽度 */
+    height: 313px;
+    /* 文字部分固定高度 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* 使文字和按钮在容器内垂直居中 */
+    padding: 10px;
+    /* 内边距，根据实际内容调整 */
+}
+
+.bannerHeading {
+    font-size: 40px;
+    line-height: 56px;
+    margin: 0 0 20px;
+    /* 文字之间留有间隔 */
+}
+
+.bannerSubHeading {
+    font-size: 16px;
+    line-height: 32px;
+    margin: 0 0 20px;
+}
+
+.bannerButton {
+    width: 115px;
+    height: 40px;
+    border-radius: 4px;
+    background-color: #006bff;
+}
+
+.bannerImageSection {
+    flex-grow: 1;
+    /* 图片部分占据剩余空间 */
+    display: flex;
+    /* 如图片尺寸不合适，可用来做居中对齐 */
+    justify-content: center;
+    align-items: center;
+}
+
+.bannerImageSection img {
+    /* 不设置宽高属性，以保持图片自然大小且不被拉伸 */
+    max-height: 100%;
+    /* 确保图片高度不超过容器，必要时可以添加max-width来约束宽度 */
+}
+
+
+.parContainer {
+    display: flex;
+    justify-content: space-between;
+    /* 使得两侧顶格分布 */
+    align-items: center;
+    /* 垂直居中展示项 */
+    width: 1168px;
+    height: 80px;
+    /* 仅用于视觉效果 */
+    margin: 40px auto 0;
+}
+
+// .parItem {
+//     width: 368px;
+//     height: 80px;
+//     background-color: #ffffff;
+//     border-radius: 4px;
+//     border-width: 2px;
+// }
+
+.canyu-container {
+    border-radius: 4px;
+    border-width: 2px;
+    display: flex;
+    /* 使用flex布局 */
+    justify-content: center;
+    /* 使项在主轴线上居中 */
+    align-items: center;
+    /* 使项在交叉轴线上居中（垂直居中） */
+    width: 368px;
+    /* 容器的宽度 */
+    height: 80px;
+    /* 容器的高度 */
+    background-color: #f0f0f0;
+    /* 背景颜色，可根据需要修改 */
+}
+
+.canyu-container:hover {
+    background-color: #006bff;
+}
+
+.canyu-image {
+    width: 34px;
+    /* 图片的固定宽度 */
+    height: 34px;
+    /* 图片的固定高度 */
+    margin-right: 7px;
+    /* 图片与文本之间的间隔 */
+}
+
+.canyu-text {
+    /* 如果需要对文本进行更多样式设定，在这里添加 */
+}
+
+.avatar-container {
+    margin: 30px auto 30px;
+    display: flex;
+    justify-content: center;
+    /* 水平居中 */
+    align-items: center;
+    /* 垂直居中 */
+    width: 1200px;
+    height: 40px;
+    /* 示例背景色, 可以根据需要修改 */
+    padding: 0;
+    /* 如果需要可以添加内边距 */
+    box-sizing: border-box;
+    /* 边框和内边距将包含在宽度和高度内 */
+}
+
+.avatar-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    /* 创建圆形效果 */
+    object-fit: cover;
+    /* 确保图片按比例填充 */
+    margin: 0 1px;
+    /* 每侧1px的外边距得到2px的间隔 */
+}
+
+/* 为了保险起见，如果不希望第一个和最后一个元素有间隔，可以添加以下代码 */
+.avatar-container :first-child {
+    margin-left: 0;
+}
+
+.avatar-container :last-child {
+    margin-right: 0;
+}
+
+
+.huoban-container {
+    margin: 42px auto 0;
+    width: 1200px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* 维持三行之间均匀间隔 */
+    padding: 0;
+    /* 根据需要，可以添加上、下内边距以适应内容 */
+}
+
+.huoban-row {
+    display: flex;
+    justify-content: center;
+    /* 确保行内内容水平居中 */
+    flex-wrap: wrap;
+    /* 允许内容换行 */
+}
+
+.huoban-image {
+    height: 72px;
+    object-fit: cover;
+    /* 确保图片在设定的高度下保持比例 */
+
+    /* 统一高度为72px */
+    >*:not(:last-child) {
+        margin-right: 24px;
+    }
+
+}
+
+
+.footer {
+    color: #FFFFFF;
+    background-color: #070D1A;
+    height: 315px;
+    padding-top: 46px;
+}
+
+.footer-container {
+
+    display: flex;
+    justify-content: space-between;
+    /* 确保左右部分分开分布 */
+    align-items: center;
+    width: 1200px;
+    height: 170px;
+    // height: 315px;
+    margin: auto;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* 在垂直方向分隔三行内容 */
+    height: 100%;
+    /* 使左边部分充满整个容器的高度 */
+}
+
+.footer-logo {
+    /* 根据需要设置logo图片的具体样式，确保图片不超出容器高度 */
+}
+
+.footer-email {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    margin-top: -40px;
+    /* 对齐邮箱图标和邮箱地址 */
+}
+
+.footer-email-icon {
+    /* 设置图标大小并调整合适的间隔 */
+    margin-right: 10px;
+    /* 假设icon和地址之间有10px间隔 */
+}
+
+.footer-email-address {
+    /* 根据需要调整邮箱地址的样式 如字体大小、颜色等 */
+}
+
+.footer-note {
+    /* 根据需要设置额外的备注信息样式 */
+    margin-top: 20px;
+    /* 增加较大的顶部间距，根据实际情况调整 */
+}
+
+.footer-right {
+    /* 如果需要，可设置二维码图片间的间隔 */
+    display: flex;
+}
+
+.footer-qrcode {
+    /* 设置二维码图片的大小 */
+    margin-right: 24px;
+    /* 假设两个二维码之间有24px间隔 */
+    width: 136px;
+    /* 假设二维码的宽度是80px */
+    height: 170px;
+    /* 假设二维码的高度是80px */
+}
+
+.footer-qrcode:last-child {
+    margin-right: 0;
+    /* 取消最后一个二维码的右间隔 */
+}
+
+
+
+.rightCon {
+    height: 170px;
+    width: 320px;
+    // background-color: #f87895;
+}
+
+.scene-text {
+    position: relative;
+    display: inline-block;
+    font-size: 36px; // 设置字体大小
+    // text-align: ;
+
+    // 定义::before伪元素的样式
+    &::before {
+        content: "";
+        position: absolute;
+        width: 60px; // 图片宽度, 根据实际情况调整
+        height: 20px; // 图片高度, 根据实际情况调整
+        background-image: url('/images/左.png'); // 图片路径, 左侧图片
+        background-size: cover; // 或者使用具体尺寸
+        background-repeat: no-repeat;
+        left: -75px; // 根据实际需求和布局调整
+        bottom: 3px; // 根据实际需求和布局调整，使图片出现在文字的左下角
+    }
+
+    // 定义::after伪元素的样式
+    &::after {
+        content: "";
+        position: absolute;
+        width: 60px; // 同上
+        height: 20px; // 同上
+        background-image: url('/images/右.png'); // 图片路径, 右侧图片
+        background-size: cover; // 或者使用具体尺寸
+        background-repeat: no-repeat;
+        right: -75px; // 根据实际需求和布局调整
+        top: 3px; // 根据实际需求和布局调整，使图片出现在文字的右上角
+        left: auto; // 重置左侧位置，确保正确对齐
+    }
+}
+
+.scene-text2 {
+    position: relative;
+    display: inline-block;
+    font-size: 36px; // 设置字体大小
+    margin-top: 50px;
+
+    // 定义::before伪元素的样式
+    &::before {
+        content: "";
+        position: absolute;
+        width: 60px; // 图片宽度, 根据实际情况调整
+        height: 20px; // 图片高度, 根据实际情况调整
+        background-image: url('/images/左-白.png'); // 图片路径, 左侧图片
+        background-size: cover; // 或者使用具体尺寸
+        background-repeat: no-repeat;
+        left: -75px; // 根据实际需求和布局调整
+        bottom: 3px; // 根据实际需求和布局调整，使图片出现在文字的左下角
+    }
+
+    // 定义::after伪元素的样式
+    &::after {
+        content: "";
+        position: absolute;
+        width: 60px; // 同上
+        height: 20px; // 同上
+        background-image: url('/images/右-白.png'); // 图片路径, 右侧图片
+        background-size: cover; // 或者使用具体尺寸
+        background-repeat: no-repeat;
+        right: -75px; // 根据实际需求和布局调整
+        top: 3px; // 根据实际需求和布局调整，使图片出现在文字的右上角
+        left: auto; // 重置左侧位置，确保正确对齐
+    }
+}
+
+
+.appContainer {
+    width: 1200px;
+    height: 350px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.appModule {
+    border-radius: 16px;
+    width: 384px;
+    height: 253px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.appImageSection {
+    width: 200px;
+    height: 145px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.appImageSection img {
+    width: 74px;
+    height: 72px;
+}
+
+.appTextSection {
+    /* 可能需要根据具体情况添加padding以得到居中效果 */
+}
+
+/* 技术名片部分 */
+
+.tecCard {
+    background-image: url("/images/tecCardBGC.png");
+    background-size: contain;
+    height: 492px;
+}
+
+.tecContainer {
+    margin: 45px auto 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1200px;
+    height: 260px;
+}
+
+.tecModule {
+    background: linear-gradient(to bottom,
+            rgba(255, 255, 255, 1),
+            rgba(255, 255, 255, 0.65));
+    width: 220px;
+    height: 260px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* 确保内容垂直居中 */
+    align-items: center;
+    text-align: center;
+}
+
+.tecImageSection img {
+    width: 72px;
+    height: 72px;
+    margin-bottom: 10px;
+    /* 根据需要调整 */
+}
+
+.tecTextSection {
+    max-width: 174px;
+}
+
+.canyuMap {
+    background-image: url("/images/canyuBGC.png");
+    background-size: contain;
+    height: 336px;
+}
+
+.communityIamge {
+    margin: 45px auto;
+    width: 1200px;
+    height: 380px;
+}
+
+.communityTab {
+    line-height: 36px;
+    margin: auto;
+    font-size: 18px;
+    width: 895px;
+    height: 36px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.communityTabText {
+    height: 36px;
+    padding: 0 16px;
+}
+
+.communityTabText:hover {
+    color: #006BFF;
+    border-radius: 900px;
+    background-color: rgba(0, 107, 255, 0.06);
+}
