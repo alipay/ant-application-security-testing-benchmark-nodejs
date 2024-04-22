@@ -42,7 +42,7 @@
     |   |-- plugin.ts
 
 ## 评价体系
-[ nodejs评价体系 ](https://github.com/alipay/ant-application-security-testing-benchmark/blob/main/doc/sast-node%E8%AF%84%E4%BB%B7%E4%BD%93%E7%B3%BB.md)
+[ Nodejs评价体系-评价项脑图 ](https://github.com/alipay/ant-application-security-testing-benchmark/blob/main/doc/sast-node%E8%AF%84%E4%BB%B7%E4%BD%93%E7%B3%BB.md)
 
 
 ## 评价体系Cases
