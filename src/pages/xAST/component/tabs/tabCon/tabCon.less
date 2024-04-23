@@ -1,0 +1,155 @@
+.text1 {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.45);
+}
+
+.text1::before {
+    content: '•';
+    display: inline-block;
+    margin-right: 0.5em;
+    font-size: 1em;
+    line-height: 1;
+    vertical-align: middle;
+}
+
+.littleHeadLine {
+    font-size: 14px;
+}
+
+.tab4Container {
+    // padding: 24px;
+    width: 1200px;
+    height: 256px;
+    background-color: #f5f9ff;
+}
+
+.textArea {
+    width: 1200px;
+    height: "256px";
+    padding: 24px;
+}
+
+.text4 {
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.45);
+    line-height: 44px;
+
+    &::before {
+        content: '•';
+        display: inline-block;
+        margin-right: 0.5em;
+        font-size: 1em;
+        line-height: 1;
+        vertical-align: middle;
+    }
+}
+
+.howTo {
+    margin-top: 10px;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.45)
+}
+
+.tab2-container {
+    width: 1200px;
+    height: 550px;
+    display: flex;
+    justify-content: space-between; // 内部模块两边顶格分布
+    // align-items: center;
+}
+
+.tab2-module {
+    background-color: #f5f9ff;
+    width: 384px;
+    height: 454px;
+    padding: 24px 24px 0px;
+    // 更多的样式可以根据需要添加，例如border, background等
+}
+
+.tab2-title {
+    font-size: 16px;
+    font-weight: 700;
+    // 根据需要可以添加更多的样式
+}
+
+.tab2-content {
+    margin-top: 12px;
+    width: 336px;
+    height: 349px;
+    line-height: 28px;
+    font-size: 14px;
+    // 如果需要滚动条可以添加overflow:auto;
+}
+
+.textWithout {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.45);
+    margin-left: 14px;
+}
+
+
+.tab3-container {
+    width: 1200px;
+    height: 550px;
+    display: flex;
+    justify-content: space-between;
+    // align-items: center;
+}
+
+.tab3-module {
+    padding-left: 24px;
+    padding-top: 24px;
+    background-color: #f5f9ff;
+    width: 588px;
+    height: 454px;
+    /* 根据需要添加更多样式，如背景色、边框、阴影等 */
+}
+
+.tab3-title {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.tab3-content {
+    margin-top: 12px;
+    width: 542px;
+    height: 410px;
+    line-height: 28px;
+    font-size: 14px;
+    /* 如果内容超出高度，可设置overflow属性，如 overflow: hidden; 或 overflow: auto; */
+}
+
+
+/* 容器样式 */
+.tab1-container {
+    background-color: #f5f9ff;
+    width: 1200px;
+    height: 314px;
+
+}
+
+/* 中间模块样式 */
+.tab1-module {
+    padding: 24px 415px 24px 24px;
+    // margin: 24px;
+    width: 1200px;
+    height: 314px;
+    /* 根据需要添加背景、边框等样式 */
+}
+
+/* 标题样式 */
+.tab1-title {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+/* 正文容器样式 */
+.tab1-content {
+    margin-top: 12px;
+    width: 542px;
+    line-height: 28px;
+    font-size: 14px;
+    /* 如果正文内容超过容器高度，可以设置超出部分如何显示 */
+    overflow: auto;
+    /* 出现滚动条 */
+}

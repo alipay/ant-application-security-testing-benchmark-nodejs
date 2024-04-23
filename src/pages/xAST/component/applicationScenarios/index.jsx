@@ -28,7 +28,6 @@ const Appscenrios = () => {
 
     // 处理鼠标划出事件
     const handleMouseLeave = (index) => {
-        console.log("离开", index);
         if (index == 1) {
             setCanyuImgURl1("/images/05参与贡献/常规样式/1.png")
         }
@@ -39,29 +38,27 @@ const Appscenrios = () => {
             setCanyuImgURl3("/images/05参与贡献/常规样式/3.png")
         }
     };
-
+    const handleClick = () => {
+        window.open("https://github.com/alipay/ant-application-security-testing-benchmark", "_blank")
+    }
 
 
 
 
     return (
         <>
-            {/* <div>
-                <img src="/images/01头部/banner.png" alt="banner" />
-
-            </div> */}
             <div style={{ backgroundColor: "#1E2639", height: "488px", color: "#fff", }}>
                 <div className={styles.bannerContainer}>
                     <div style={{ display: "flex", width: "100%", alignItems: "center" }}>
                         <div className={styles.bannerTextSection}>
-                            <h1 className={styles.bannerHeading}> <span class="blueCap">A</span>pplication <span class="blueCap">S</span>ecurity <span class="blueCap">E</span>esting
-                                <span class="blueCap">E</span>valuation <span class="blueCap">C</span>riteria</h1>
+                            <h1 className={styles.bannerHeading}> <span class="blueCap">A</span>pplication <span class="blueCap">S</span>ecurity <span class="blueCap">T</span>esting
+                                Evaluation Criteria</h1>
                             <p className={styles.bannerSubHeading}>
                                 针对应用安全测试领域（AST）缺乏有效衡量技术能力标准的业界痛点，
                                 蚂蚁安全团队联合浙江大学网络空间安全学院的20余位专家学者，
                                 共同设计了xAST评价体系及其测试样本套件Benchmark。
                             </p>
-                            <Button type="primary" className={styles.bannerButton}>Github {">"} </Button>
+                            <Button type="primary" className={styles.bannerButton} onClick={handleClick} >Github {">"} </Button>
                         </div>
 
                     </div>
@@ -74,7 +71,7 @@ const Appscenrios = () => {
             </div>
 
             <div style={{ width: '1200px', margin: '0 auto' }}>
-                <div style={{ textAlign: 'center', marginTop: "40px" }}>
+                <div style={{ textAlign: 'center', marginTop: "80px" }}>
                     <div class="scene-text">应用场景</div>
                 </div>
                 <div >
@@ -113,7 +110,7 @@ const Appscenrios = () => {
             </div>
             <div className="tecCard">
                 <div style={{ textAlign: 'center' }}>
-                    <div class="scene-text2"> 技术名片</div>
+                    <div class="scene-text2">技术名片</div>
                 </div>
                 <div className={styles.tecContainer}>
                     <div className={styles.tecModule}>
@@ -163,81 +160,94 @@ const Appscenrios = () => {
                 </div>
             </div>
 
-            <div style={{ textAlign: 'center', marginTop: "40px" }}>
-                <div class="scene-text">社区组织架构</div>
+            <div style={{ textAlign: 'center', marginTop: "80px" }}>
+                <div class="scene-text"> <a className="communityLink" href="https://yuque.antfin-inc.com/product_sec/poxwxs/lt6asc1oino9ig1x?singleDoc# 《xAST开源社区组织架构》" target="_blank" rel="noopener noreferrer">社区组织架构</a></div>
             </div>
             <div class="communityIamge">
                 <img src="/images/04社区组织架构/map.png" alt="" />
             </div>
-            <div class="communityTab"   >
+            {/* <div class="communityTab"   >
                 <div className="communityTabText">PMC（筹）</div>
                 <div className="communityTabText">Develop Group（开发者社区）</div>
                 <div className="communityTabText">User Group（用户社区）</div>
-                {/* <div>Working Mechanism（社区日常工作机制）</div> */}
                 <div>社区日常工作机制</div>
-            </div>
+            </div> */}
 
             <CommunityTabs />
 
             <div className="canyuMap">
-                <div style={{ marginTop: "60px" }}>
+                <div style={{ marginTop: "80px" }}>
                     <div style={{ textAlign: 'center' }}>
                         <div class="scene-text2">参与贡献</div>
                     </div>
                 </div>
                 <div className={styles.parContainer}>
                     <div class="canyu-container" onMouseEnter={() => handleMouseEnter(1)} onMouseLeave={() => handleMouseLeave(1)}>
-                        <img src={canyuImgURl1} alt="示例图片" class="canyu-image" />
-                        <span class="canyu-text">参与评测</span>
+                        <a href="https://github.com/alipay/ant-application-security-testing-benchmark/wiki/%E5%8F%82%E4%B8%8E%E8%B4%A1%E7%8C%AE#%E5%8F%82%E4%B8%8E%E4%BB%A3%E7%A0%81%E6%96%87%E6%A1%A3%E8%B4%A1%E7%8C%AE" target="_blank" rel="noopener noreferrer">
+                            <img src={canyuImgURl1} alt="示例图片" class="canyu-image" />
+                            <span class="canyu-text">参与评测</span></a>
                     </div>
                     <div class="canyu-container" onMouseEnter={() => handleMouseEnter(2)} onMouseLeave={() => handleMouseLeave(2)}>
-                        <img src={canyuImgURl2} alt="示例图片" class="canyu-image" />
-                        <span class="canyu-text">参与代码贡献</span>
+                        <a href="https://github.com/alipay/ant-application-security-testing-benchmark/wiki/%E5%8F%82%E4%B8%8E%E8%B4%A1%E7%8C%AE#%E5%8F%82%E4%B8%8E%E4%BB%A3%E7%A0%81%E6%96%87%E6%A1%A3%E8%B4%A1%E7%8C%AE" target="_blank" rel="noopener noreferrer">
+                            <img src={canyuImgURl2} alt="示例图片" class="canyu-image" />
+                            <span class="canyu-text"> 参与代码贡献</span>
+                        </a>
                     </div>
                     <div class="canyu-container" onMouseEnter={() => handleMouseEnter(3)} onMouseLeave={() => handleMouseLeave(3)} >
-                        <img src={canyuImgURl3} alt="示例图片" class="canyu-image" />
-                        <span class="canyu-text">行为准则</span>
+                        <a href="https://github.com/alipay/ant-application-security-testing-benchmark/blob/main/code-of-conduct.md" target="_blank" rel="noopener noreferrer">
+                            <img src={canyuImgURl3} alt="示例图片" class="canyu-image" />
+                            <span class="canyu-text">行为准则</span>
+                        </a>
                     </div>
                 </div>
             </div>
 
 
-            {/* <div style={{ width: "800px", height: "140px", margin: "0 auto" }}> */}
-            <div style={{ textAlign: 'center', marginTop: "40px" }}>
+            <div style={{ textAlign: 'center', marginTop: "80px", marginBottom: "50px" }}>
                 <div class="scene-text">Maintainers</div>
             </div>
             <div class="avatar-container">
-                <img src="/images/08头像/1.png" alt="Circle Avatar" class="avatar-image" />
-                <img src="/images/08头像/1.png" alt="Circle Avatar" class="avatar-image" />
+                {/* <img src="/images/08头像/1.png" alt="Circle Avatar" class="avatar-image" />
+                <img src="/images/08头像/1.png" alt="Circle Avatar" class="avatar-image" /> */}
+                <div >
+                    <img class="avatar" src="/images/08头像/01.png" alt="Profile Avatar" />
+                    <img class="avatar" src="/images/08头像/02.png" alt="Profile Avatar" />
+                    <img class="avatar" src="/images/08头像/03.png" alt="Profile Avatar" />
+                    <img class="avatar" src="/images/08头像/04.png" alt="Profile Avatar" />
+                    <img class="avatar" src="/images/08头像/05.png" alt="Profile Avatar" />
+                </div>
             </div>
             {/* </div> */}
             <div style={{
                 backgroundImage: 'url("/images/huobanBGC.png")',
                 backgroundSize: "contain"
             }}>
-                <div style={{ textAlign: 'center', marginTop: "40px" }}>
+                <div style={{ textAlign: 'center', marginTop: "80px" }}>
                     <div class="scene-text">生态伙伴</div>
                 </div>
-                <div style={{ textAlign: 'center', marginTop: "18px" }}>排名不分先后</div>
+                <div style={{ textAlign: 'center', marginTop: "16px", marginBottom: "44px", fontSize: "18px", color: "rgba(0, 0, 0, 0.45)" }}>排名不分先后</div>
+                <div style={{ paddingBottom: "80px" }}>
+                    <div class="huoban-container">
+                        <div class="huoban-row">
+                            <img src="/images/06生态伙伴/平切.png" alt="Image 1" class="huoban-image" />
+                            <img src="/images/06生态伙伴/中国评测.png" alt="Image 1" class="huoban-image" />
+                            <img src="/images/06生态伙伴/浙江大学.png" alt="Image 2" class="huoban-image" />
+                            <img src="/images/06生态伙伴/开放.png" alt="Image 3" class="huoban-image" />
+                        </div>
+                        <div class="huoban-row">
+                            <img src="/images/06生态伙伴/阿里巴巴.png" alt="Image 7" class="huoban-image" />
+                            <img src="/images/06生态伙伴/科大.png" alt="Image 8" class="huoban-image" />
+                            <img src="/images/06生态伙伴/水木.png" alt="Image 9" class="huoban-image" />
+                            <img src="/images/06生态伙伴/蚂蚁.png" alt="Image 10" class="huoban-image" />
+                        </div>
+                        <div class="huoban-row">
+                            <img src="/images/06生态伙伴/斗象.png" alt="Image 4" class="huoban-image" />
+                            <img src="/images/06生态伙伴/统信.png" alt="Image 5" class="huoban-image" />
+                            <img src="/images/06生态伙伴/蜚语科技.png" alt="Image 1" class="huoban-image" />
 
-                <div class="huoban-container">
-                    <div class="huoban-row">
-                        <img src="/images/06生态伙伴/中国评测.png" alt="Image 1" class="huoban-image" />
-                        <img src="/images/06生态伙伴/浙江大学.png" alt="Image 2" class="huoban-image" />
-                        <img src="/images/06生态伙伴/开放.png" alt="Image 3" class="huoban-image" />
-                    </div>
-                    <div class="huoban-row">
-                        <img src="/images/06生态伙伴/阿里巴巴.png" alt="Image 7" class="huoban-image" />
-                        <img src="/images/06生态伙伴/科大.png" alt="Image 8" class="huoban-image" />
-                        <img src="/images/06生态伙伴/水木.png" alt="Image 9" class="huoban-image" />
-                        <img src="/images/06生态伙伴/蚂蚁.png" alt="Image 10" class="huoban-image" />
-                    </div>
-                    <div class="huoban-row">
-                        <img src="/images/06生态伙伴/斗象.png" alt="Image 4" class="huoban-image" />
-                        <img src="/images/06生态伙伴/统信.png" alt="Image 5" class="huoban-image" />
+                        </div>
                     </div>
                 </div>
-
 
             </div>
             <div class="footer">
@@ -251,7 +261,10 @@ const Appscenrios = () => {
                             <span class="footer-email-address">xast-contact@service.alipay.com</span>
                         </div>
                         <div class="footer-note">
-                            社区介绍  <Divider type="vertical" style={{ backgroundColor: "#fff" }} /> 社区活动  <Divider type="vertical" style={{ backgroundColor: "#fff" }} /> 评测报告
+                            <a className="linkBottom" href="#" >社区介绍</a>   <Divider type="vertical" style={{ backgroundColor: "#fff" }} />
+                            <a className="linkBottom" href="https://www.yuque.com/u22090306/nxa79b" target="_blank" rel="noopener noreferrer">社区活动</a>
+                            <Divider type="vertical" style={{ backgroundColor: "#fff" }} />
+                            <a className="linkBottom" href="https://www.yuque.com/u22090306/nxa79b" target="_blank" rel="noopener noreferrer">评测报告</a>
                         </div>
                     </div>
                     <div class="footer-right">

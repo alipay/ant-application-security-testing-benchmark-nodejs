@@ -1,14 +1,15 @@
 import React, { useState } from 'react';
+import { Tab1, Tab2, Tab3, Tab4 } from "./tabCon/tab1"
 import './index.less';
 
 const CommunityTabs = () => {
     const [activeTab, setActiveTab] = useState('PMC（筹）');
 
     const tabs = [
-        { name: 'PMC（筹）', content: 'Content for Tab 1' },
-        { name: 'Develop Group（开发者社区）', content: 'Content for Tab 2' },
-        { name: 'User Group（用户社区）', content: 'Content for Tab 3' },
-        { name: '社区日常工作机制', content: 'Content for Tab 4' },
+        { name: 'PMC（筹）', content: <Tab1 /> },
+        { name: 'Develop Group（开发者社区）', content: <Tab2 /> },
+        { name: 'User Group（用户社区）', content: <Tab3 /> },
+        { name: '社区日常工作机制', content: <Tab4 /> },
     ];
 
     return (

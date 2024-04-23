@@ -25,19 +25,20 @@ const TopNav = () => {
             <div>
                 <nav class="navbar">
                     <div class="content">
-                        <div class="logo"></div>
+                        <a href="https://github.com/alipay/ant-application-security-testing-benchmark" target="_blank" rel="noopener noreferrer"><div class="logo"> </div></a>
                         <ul class="nav-links">
                             <li><a /* href="/page1" */>社区介绍</a></li>
-                            <li><a /* href="/page2" */>社区活动</a></li>
-                            <li><a /* href="/page3" */>评测报告</a></li>
+                            <li><a href="https://www.yuque.com/u22090306/nxa79b" target='_blank'>社区活动</a></li>
+                            <li><a href="https://www.yuque.com/u22090306/nxa79b" target='_blank'>评测报告</a></li>
                         </ul>
-                        <div className="git-icon"><a href='#'><img src="/images/01头部/github.png" /></a></div>
+                        <div className="git-icon"><a href='https://github.com/alipay/ant-application-security-testing-benchmark' target='_blank'><img src="/images/01头部/github.png" /></a></div>
                         <div className="language-icon"><img src={languageImg[currentLanguage]} alt="" /></div>
                         <div class="language-selector">
-                            <select value={currentLanguage} onChange={handleLanguageChange}>
+                            <span style={{ lineHeight: "18px", color: "rgba(255, 255, 255, 1)" }}>简体中文</span>
+                            {/* <select value={currentLanguage} onChange={handleLanguageChange}>
                                 <option value="zh-CN">简体中文</option>
                                 <option value="en-US">English</option>
-                            </select>
+                            </select> */}
                         </div>
                     </div>
                 </nav>

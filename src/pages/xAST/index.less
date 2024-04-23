@@ -39,6 +39,7 @@ body {
             flex-grow: 1; // 导航链接部分占据多余空间
             display: flex;
             list-style: none;
+            font-size: 16px;
 
             >:first-child a {
                 padding: 0;
@@ -74,15 +75,15 @@ body {
         }
 
         .language-selector {
-            // 在这里可以不设置宽度，它会自动根据内容调整
             margin-right: 66px; // 导航链接到语言选择器的间隔
             width: 105px;
             height: fit-content;
 
             select {
+                border: none;
                 color: #fff;
                 padding: 0px 5px;
-                border-radius: 5px;
+                // border-radius: 5px;
                 background-color: #1e2639;
             }
         }

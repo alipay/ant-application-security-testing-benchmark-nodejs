@@ -94,11 +94,20 @@
     height: 80px;
     /* 容器的高度 */
     background-color: #f0f0f0;
+
     /* 背景颜色，可根据需要修改 */
+    a {
+        color: black;
+    }
 }
 
 .canyu-container:hover {
     background-color: #006bff;
+
+    a {
+        color: #FFFFFF;
+    }
+
 }
 
 .canyu-image {
@@ -110,56 +119,52 @@
     /* 图片与文本之间的间隔 */
 }
 
-.canyu-text {
-    /* 如果需要对文本进行更多样式设定，在这里添加 */
-}
 
-.avatar-container {
-    margin: 30px auto 30px;
-    display: flex;
-    justify-content: center;
-    /* 水平居中 */
-    align-items: center;
-    /* 垂直居中 */
-    width: 1200px;
-    height: 40px;
-    /* 示例背景色, 可以根据需要修改 */
-    padding: 0;
-    /* 如果需要可以添加内边距 */
-    box-sizing: border-box;
-    /* 边框和内边距将包含在宽度和高度内 */
-}
+// .avatar-container {
+//     margin: 30px auto 30px;
+//     display: flex;
+//     justify-content: center;
+//     /* 水平居中 */
+//     align-items: center;
+//     /* 垂直居中 */
+//     width: 1200px;
+//     height: 40px;
+//     /* 示例背景色, 可以根据需要修改 */
+//     padding: 0;
+//     /* 如果需要可以添加内边距 */
+//     box-sizing: border-box;
+//     /* 边框和内边距将包含在宽度和高度内 */
+// }
 
-.avatar-image {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    /* 创建圆形效果 */
-    object-fit: cover;
-    /* 确保图片按比例填充 */
-    margin: 0 1px;
-    /* 每侧1px的外边距得到2px的间隔 */
-}
+// .avatar-image {
+//     width: 40px;
+//     height: 40px;
+//     border-radius: 50%;
+//     /* 创建圆形效果 */
+//     object-fit: cover;
+//     /* 确保图片按比例填充 */
+//     margin: 0 1px;
+//     /* 每侧1px的外边距得到2px的间隔 */
+// }
 
-/* 为了保险起见，如果不希望第一个和最后一个元素有间隔，可以添加以下代码 */
-.avatar-container :first-child {
-    margin-left: 0;
-}
+// /* 为了保险起见，如果不希望第一个和最后一个元素有间隔，可以添加以下代码 */
+// .avatar-container :first-child {
+//     margin-left: 0;
+// }
 
-.avatar-container :last-child {
-    margin-right: 0;
-}
+// .avatar-container :last-child {
+//     margin-right: 0;
+// }
 
 
 .huoban-container {
-    margin: 42px auto 0;
+    margin: auto;
     width: 1200px;
     height: 250px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     /* 维持三行之间均匀间隔 */
-    padding: 0;
     /* 根据需要，可以添加上、下内边距以适应内容 */
 }
 
@@ -178,7 +183,7 @@
 
     /* 统一高度为72px */
     >*:not(:last-child) {
-        margin-right: 24px;
+        margin-right: 70px;
     }
 
 }
@@ -188,7 +193,8 @@
     color: #FFFFFF;
     background-color: #070D1A;
     height: 315px;
-    padding-top: 46px;
+    padding-top: 52px;
+    // margin-top: 80px;
 }
 
 .footer-container {
@@ -260,6 +266,16 @@
     /* 取消最后一个二维码的右间隔 */
 }
 
+.linkBottom {
+    color: white;
+    /* 默认颜色为白色 */
+    text-decoration: none;
+
+    /* 可选：去除下划线 */
+    >:hover {
+        color: #1677FF;
+    }
+}
 
 
 .rightCon {
@@ -267,6 +283,16 @@
     width: 320px;
     // background-color: #f87895;
 }
+
+.communityLink {
+    color: rgba(0, 0, 0, 0.88);
+    text-decoration: none;
+
+    >:hover {
+        color: #1677FF;
+    }
+}
+
 
 .scene-text {
     position: relative;
@@ -303,10 +329,11 @@
 }
 
 .scene-text2 {
+    color: #FFFFFF;
     position: relative;
     display: inline-block;
     font-size: 36px; // 设置字体大小
-    margin-top: 50px;
+    margin-top: 80px;
 
     // 定义::before伪元素的样式
     &::before {
@@ -343,6 +370,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 40px;
 }
 
 .appModule {
@@ -370,7 +398,7 @@
 }
 
 .appTextSection {
-    /* 可能需要根据具体情况添加padding以得到居中效果 */
+    font-size: 22px;
 }
 
 /* 技术名片部分 */
@@ -408,7 +436,7 @@
 .tecImageSection img {
     width: 72px;
     height: 72px;
-    margin-bottom: 10px;
+    margin-bottom: 24px;
     /* 根据需要调整 */
 }
 
@@ -448,4 +476,30 @@
     color: #006BFF;
     border-radius: 900px;
     background-color: rgba(0, 107, 255, 0.06);
+}
+
+.avatar-container {
+    max-width: 1200px;
+    margin: auto;
+    width: fit-content;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    overflow: hidden;
+    object-fit: cover;
+    object-position: center;
+    margin-right: 4px;
+    /* 设置头像之间的间距 */
+}
+
+.avatar:last-child {
+    margin-right: 0;
+    /* 确保最后一个头像没有额外的右边距 */
 }
